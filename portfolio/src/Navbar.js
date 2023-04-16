@@ -1,16 +1,14 @@
 const Navbar = () => {
-    return ( 
-        <nav classname="navbar">
-            <h1>Welcome to the Navigation Bar!</h1>
-            <div classname="links">
-                <a href="/">Home</a>
-                <br />
-                <a href="/resume">Resume</a>
-                <br />
-                <a href="/contact">Contact</a>
-            </div>
-        </nav>
-     );
+  return (
+    <nav className="navbar">
+      <h1>Welcome to Achyut's Portfolio</h1>
+      <div className="links">
+        <a href="/">Home</a>
+        <a href="/resume">Resume</a>
+        <a href="/contact">Contact Me!</a>
+      </div>
+    </nav>
+  );
 }
  
 export default Navbar;
