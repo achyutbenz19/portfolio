@@ -8,11 +8,11 @@
   color: #333;
 }
 .navbar {
-  font-size: 105%;
+  font-size: 110%;
   text-align: center;
   padding: 18px;
   margin: 0 auto;
-  padding-top: 1cm;
+  padding-top: 20px;
 }
 .navbar a {
   text-decoration: none;
@@ -39,8 +39,11 @@
   padding-bottom: 19px;
   font-size: 100px;
   color: #333;
-  padding-top: 7.5%;
+  padding-top: 8.5%;
 }
-.navbar h1{
-  font-size: larger;
+.skills h1 { 
+  letter-spacing: 11px;
+  padding-top: 300px;
+  text-align: center;
+  font-size: 70px;
 }
