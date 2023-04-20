@@ -1,8 +1,8 @@
 const Home = () => {
     return (
       <home className="home">
-        <h1>Achyut Krishna Byanjankar</h1>
-        <h2>Software Developer, Full Stack Engineer, Data Scientist.</h2>
+        <h1>ACHYUT KRISHNA BYANJANKAR</h1>
+        <h2>SOFTWARE ENGINEER, FRONT END DEV & DATA SCIENTIST.</h2>
       </home>
     );
   }
