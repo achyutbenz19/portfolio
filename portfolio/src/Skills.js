@@ -4,9 +4,9 @@ const Skills = () => {
         <h1>MY EXPERTISE</h1>
         <table>
           <tr>
-            <td>Backend</td>
-            <td>Frontend</td>
-            <td>Data Science</td>
+            <td><img src={require("./logos/python-512.png")} alt="Coding-Logo" className="Coding-Logo"/>Backend</td>
+            <td><img src={require("./logos/react-logo.png")} alt="React-Logo" className="React-Logo"/>Frontend</td>
+            <td><img src={require("./logos/data-logo.png")} alt="Data-Logo" className="Data-Logo"/>Analysis</td>
           </tr>
           <tr>
             <td>Experienced in Python, C++, VisualBasic, Javascript & QBASIC.</td>
