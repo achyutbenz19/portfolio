@@ -87,7 +87,7 @@
   top: -12px;
   bottom: 37px;
   width: 1px; /* specify the width of the line */
-  background-color: #7d7d7d; /* specify the color of the line */
+  background-color: #666565; /* specify the color of the line */
 }
 .skills table tr:first-child td .Coding-Logo {
   width: 40px;
@@ -111,8 +111,57 @@
   font-size: 70px;
   padding-top: 250px;
   color:  #e8e8e8;
-  padding-left: 132px;
+  text-align: right;
+  padding-right: 135px;
+}
+.contact h1{
+  font-size: 70px;
+  padding-top: 250px;
+  color:  #e8e8e8;
+  padding-left: 135px;
+  padding-bottom: 20px;
+}
+.contact label[for="name"],
+.contact label[for="email"],
+.contact label[for="message"] {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 15px;
+}
+.contact input[type="text"] {
+  padding-left: 135px;
+  width: 20%;
+  padding: 10px;
+  font-size: 15px;
+  border: 3px solid #b3b3b3;
+  border-radius: 4px;
+}
+.contact input[type="email"] {
+  padding-left: 135px;
+  width: 20%;
+  padding: 10px;
+  font-size: 15px;
+  border: 3px solid #b3b3b3;
+  border-radius: 4px;
+}
+.contact textarea {
+  width: 50%;
+  height: 100px; /* Increase the height to 100px */
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid #b3b3b3;
+  border-radius: 4px;
+  resize: vertical;
 }
 
-
-
+.contact label {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  padding-left: 135px;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  margin-left: 135px;
+}
