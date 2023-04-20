@@ -149,11 +149,10 @@
   height: 100px; /* Increase the height to 100px */
   padding: 10px;
   font-size: 15px;
-  border: 2px solid #b3b3b3;
+  border: 3px solid #b3b3b3;
   border-radius: 4px;
   resize: vertical;
 }
-
 .contact label {
   padding-top: 20px;
   font-weight: bold;
@@ -164,4 +163,18 @@
 .contact input[type="email"],
 .contact textarea {
   margin-left: 135px;
+}
+.contact button {
+  margin-left: 15px;
+  vertical-align: 31%;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+  border-color: #b3b3b3;
+  background-color: transparent;
+  color: #b3b3b3;
+}
+.contact button:hover {
+  transform: scale(1.1);
 }
