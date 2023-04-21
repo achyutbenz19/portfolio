@@ -120,6 +120,7 @@
   color:  #e8e8e8;
   padding-left: 135px;
   padding-bottom: 20px;
+
 }
 .contact label[for="name"],
 .contact label[for="email"],
@@ -176,7 +177,7 @@
   color: #b3b3b3;
 }
 .contact button:hover {
-  transform: scale(1.1);
+  transform: scale(1.06);
 }
 .contact-message {
   font-weight: bold;
@@ -184,4 +185,30 @@
   padding-left: 135px;
   padding-top: 15px;
   font-size: 20px;
+}
+.Linkedin-Logo{
+  float: right;  
+  width: 40px;
+  height: 40px;
+  padding-right: 135px;
+  transition: transform 0.2s ease-in-out;
+}
+.Github-Logo{
+  float: right;
+  width: 43px;
+  height: 43px;
+  padding-right: 135px;
+  transition: transform 0.2s ease-in-out;
+}
+.Gmail-Logo{
+  float: right;
+  width: 39.9px;
+  height: 30px;
+  padding-right: 135px;
+  transition: transform 0.2s ease-in-out;
+}
+.Linkedin-Logo:hover,
+.Github-Logo:hover,
+.Gmail-Logo:hover {
+  transform: scale(1.05);
 }
