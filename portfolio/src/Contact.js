@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { addDoc, collection } from 'firebase/firestore';
+import db from './firebase';
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,6 +24,16 @@ const Contact = () => {
     console.log(formData);
   };
 
+  const handleNew = async () => {
+    const CollectionRef = collection(db, "contacts")
+    const payload = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message
+    }
+    await addDoc(CollectionRef, payload);
+  }
+
   return (
     <div className="contact">
       <h1>Contact Me!</h1>
@@ -34,7 +47,7 @@ const Contact = () => {
         <label htmlFor="message">Message:</label>
         <textarea id="message" name="message" value={formData.message} onChange={handleChange} required></textarea>
 
-        <button type="submit">Submit</button>
+        <button type="submit" onClick={handleNew}>Submit</button>
       </form>
     </div>
   );
