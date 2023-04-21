@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { addDoc, collection } from 'firebase/firestore';
 import db from './firebase';
 
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -18,11 +17,16 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Perform any necessary actions with the form data, such as sending it to a server or displaying it on the page
-    console.log(formData);
+  const handleSubmit = async (event) => {
+    event.preventDefault();  
+    // Clear the form input fields by resetting the formData state to its initial values
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
   };
+  
 
   const handleNew = async () => {
     const CollectionRef = collection(db, "contacts")
