@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { setDoc, doc } from 'firebase/firestore';
+import { addDoc, collection } from 'firebase/firestore';
 import db from './firebase';
 
 
@@ -25,9 +25,13 @@ const Contact = () => {
   };
 
   const handleNew = async () => {
-    const docRef = doc(db, "contacts", "001");
-    const payload = { name: "test", email:"test@gmail.com", message:"you rock!"}
-    await setDoc(docRef, payload);
+    const CollectionRef = collection(db, "contacts")
+    const payload = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message
+    }
+    await addDoc(CollectionRef, payload);
   }
 
   return (
