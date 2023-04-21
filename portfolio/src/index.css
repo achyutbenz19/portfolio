@@ -178,3 +178,10 @@
 .contact button:hover {
   transform: scale(1.1);
 }
+.contact-message {
+  font-weight: bold;
+  color: #e8e8e8;
+  padding-left: 135px;
+  padding-top: 15px;
+  font-size: 20px;
+}

@@ -9,6 +9,8 @@ const Contact = () => {
     message: ''
   });
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData(prevState => ({
@@ -19,16 +21,6 @@ const Contact = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();  
-    // Clear the form input fields by resetting the formData state to its initial values
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
-  };
-  
-
-  const handleNew = async () => {
     const CollectionRef = collection(db, "contacts")
     const payload = {
       name: formData.name,
@@ -36,7 +28,14 @@ const Contact = () => {
       message: formData.message
     }
     await addDoc(CollectionRef, payload);
-  }
+    setIsSubmitted(true);
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
+  
 
   return (
     <div className="contact">
@@ -51,8 +50,9 @@ const Contact = () => {
         <label htmlFor="message">Message:</label>
         <textarea id="message" name="message" value={formData.message} onChange={handleChange} required></textarea>
 
-        <button type="submit" onClick={handleNew}>Submit</button>
+        <button type="submit">Submit</button>
       </form>
+      {isSubmitted && <p className='contact-message'>Your message has been sent!</p>}
     </div>
   );
 };
