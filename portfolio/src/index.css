@@ -2,10 +2,10 @@
 
 /* base styles */
 * {
-  background-color: #181818;
+  background-color: #DDD0C8;
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  color: #b3b3b3;
+  color: #8b8077;
 }
 .navbar {
   font-size: 120%;
@@ -17,10 +17,10 @@
 .navbar a {
   text-decoration: none;
   padding: 50px;
-  color: #b3b3b3;
+  color: #323232;
 }
 .navbar a:hover {
-  color: #e8e8e8;
+  color: #323232;
   font-weight: bold;
 }
 .content {
@@ -30,21 +30,21 @@
   text-align: center;
   margin-left: 16px;
   letter-spacing: 5px;
-  color: #b3b3b3;
+  color: #8b8077;
   padding-top: 10px;
 }
 .home h1 {
   text-align: center;
   padding-bottom: 19px;
   font-size: 100px;
-  color: #e8e8e8;
+  color: #323232;
   padding-top: 12.75%;
 }
 .skills h1 { 
   padding-top: 300px;
   text-align: center;
   font-size: 70px;
-  color: #e8e8e8;
+  color: #323232;
   padding-bottom: 55px;
 }
 .skills h2 {
@@ -57,7 +57,7 @@
 .skills table {
   border-collapse: separate;
   margin: 0 auto;
-  border: 4px solid #e8e8e8;
+  border: 4px solid #323232;
   width: 80%; /* specify a width for the table */
 }
 .skills table tr:first-child td {
@@ -68,9 +68,10 @@
   font-size: 35px;
   text-align: right;
   font-weight: bold;
-  color: #e8e8e8;
+  color: #323232;
 }
 .skills table tr:nth-child(2) td {
+  color: #323232;
   padding-left: 60px;
   padding-bottom: 50px;
   font-size: 18px;
@@ -87,7 +88,7 @@
   top: -12px;
   bottom: 37px;
   width: 1px; /* specify the width of the line */
-  background-color: #666565; /* specify the color of the line */
+  background-color: #323232; /* specify the color of the line */
 }
 .skills table tr:first-child td .Coding-Logo {
   width: 40px;
@@ -110,17 +111,20 @@
 .work h1{
   font-size: 70px;
   padding-top: 250px;
-  color:  #e8e8e8;
+  color:  #323232;
   text-align: right;
   padding-right: 135px;
+  padding-bottom: 250px;
+}
+.contact {
+  border-top: 2px solid #323232;
+  padding-top: 35px;
 }
 .contact h1{
-  font-size: 70px;
-  padding-top: 250px;
-  color:  #e8e8e8;
+  font-size: 40px;
+  color:  #323232;
   padding-left: 135px;
   padding-bottom: 20px;
-
 }
 .contact label[for="name"],
 .contact label[for="email"],
@@ -128,13 +132,14 @@
   margin: 0 auto;
   display: block;
   margin-bottom: 15px;
+  color: #323232;
 }
 .contact input[type="text"] {
   padding-left: 135px;
   width: 20%;
   padding: 10px;
   font-size: 15px;
-  border: 3px solid #b3b3b3;
+  border: 3px solid #8b8077;
   border-radius: 4px;
 }
 .contact input[type="email"] {
@@ -142,7 +147,7 @@
   width: 20%;
   padding: 10px;
   font-size: 15px;
-  border: 3px solid #b3b3b3;
+  border: 3px solid #8b8077;
   border-radius: 4px;
 }
 .contact textarea {
@@ -150,20 +155,22 @@
   height: 100px; /* Increase the height to 100px */
   padding: 10px;
   font-size: 15px;
-  border: 3px solid #b3b3b3;
+  color: #323232;
+  border: 3px solid #8b8077;
   border-radius: 4px;
   resize: vertical;
 }
 .contact label {
-  padding-top: 20px;
+  padding-top: 5px;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 17px;
   padding-left: 135px;
 }
 .contact input[type="text"],
 .contact input[type="email"],
 .contact textarea {
   margin-left: 135px;
+  color: #323232;
 }
 .contact button {
   margin-left: 15px;
@@ -172,18 +179,17 @@
   font-weight: bold;
   border-radius: 5px;
   transition: transform 0.2s ease-in-out;
-  border-color: #b3b3b3;
+  border-color: #8b8077;
   background-color: transparent;
-  color: #b3b3b3;
+  color: #323232;
 }
 .contact button:hover {
   transform: scale(1.06);
 }
 .contact-message {
   font-weight: bold;
-  color: #e8e8e8;
+  color: #323232;
   padding-left: 135px;
-  padding-top: 15px;
   font-size: 20px;
 }
 .Linkedin-Logo{
