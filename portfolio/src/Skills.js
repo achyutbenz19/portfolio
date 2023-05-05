@@ -6,7 +6,7 @@ const Skills = () => {
           <tr>
             <td><img src={require("./logos/python-512.png")} alt="Coding-Logo" className="Coding-Logo"/>Backend</td>
             <td><img src={require("./logos/react-logo.png")} alt="React-Logo" className="React-Logo"/>Frontend</td>
-            <td><img src={require("./logos/data-logo.png")} alt="Data-Logo" className="Data-Logo"/>Analysis</td>
+            <td><img src={require("./logos/data-logo.png")} alt="Data-Logo" className="Data-Logo"/>AI</td>
           </tr>
           <tr>
             <td>Experienced in Python, C++, VisualBasic, Javascript & QBASIC.</td>
